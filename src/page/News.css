@@ -1,0 +1,105 @@
+/* Container หลัก */
+.news-container {
+  margin: 20px auto;
+  width: 90%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #1976d2; /* กรอบข้อความสีน้ำเงิน */
+}
+
+/* หัวข้อข่าวใหม่ */
+.news-header {
+  text-align: right;
+}
+
+.news-title {
+  display: inline-block;
+  background-color: #1976d2; /* สีกรอบหัวข้อ */
+  color: white; /* สีตัวหนังสือ */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* เนื้อหา */
+.news-content {
+  display: grid;
+  grid-template-columns: 400px 1fr; /* ปรับคอลัมน์ซ้ายให้กว้างขึ้น */
+  grid-template-rows: auto auto; /* แบ่งเป็นสองแถว */
+  gap: 20px; /* ระยะห่างระหว่างช่อง */
+  margin-top: 20px;
+  background-color: #e0e0e0; /* พื้นหลังของ Grid เป็นสีขาว */
+  padding: 20px; /* เพิ่มระยะห่างภายใน Grid */
+  border-radius: 10px; /* มุมโค้ง */
+}
+
+/* ชื่อคนโพสต์และหมวดหมู่ */
+.news-left-top {
+  grid-column: 1 / 2; /* อยู่ในคอลัมน์ซ้าย */
+  grid-row: 1 / 2; /* อยู่ในแถวบน */
+  font-size: 14px;
+  color: white; /* สีตัวหนังสือ */
+  padding: 10px; /* เพิ่มระยะห่างภายใน */
+  background-color: #6d6c6c; /* สีเทาเข้ม */
+  border-radius: 5px;
+  margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่าง */
+}
+
+/* ชื่อข่าว */
+.news-right-top {
+  grid-column: 2 / 3; /* อยู่ในคอลัมน์ขวา */
+  grid-row: 1 / 2; /* อยู่ในแถวบน */
+  text-align: right;
+  padding: 15px; /* เพิ่มระยะห่างภายใน */
+  background-color: #6d6c6c; /* สีเทาเข้ม */
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;/* จัดแนวนอน */
+  align-items: center;/* จัดแนวตั้ง */
+}
+
+.news-right-top h3 {
+  font-size: 20px;
+  color: black; /* ชื่อข่าวสีขาว */
+  margin: 0;
+}
+
+/* รูปภาพ */
+.news-left-bottom {
+  grid-column: 1 / 2; /* อยู่ในคอลัมน์ซ้าย */
+  grid-row: 2 / 3; /* อยู่ในแถวล่าง */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 100%; /* ปรับความกว้างเต็มคอลัมน์ */
+  height: 400px; /* ปรับความสูงให้ใหญ่ขึ้น */
+  background-color: #f9f9f9; /* สีพื้นสำหรับรูปภาพ */
+  border: 1px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* รายละเอียดข่าว */
+.news-right-bottom {
+  grid-column: 2 / 3; /* อยู่ในคอลัมน์ขวา */
+  grid-row: 2 / 3; /* อยู่ในแถวล่าง */
+  font-size: 14px;
+  color: black;
+  padding: 60px;
+  background-color: white; /* พื้นหลังสีขาว */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเล็กน้อย */
+}
+
+.news-right-bottom p {
+  margin: 5px 0;
+}

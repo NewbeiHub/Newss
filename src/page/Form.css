@@ -1,0 +1,150 @@
+/* Container หลักของฟอร์ม */
+.form-container {
+  margin: 20px auto;
+  width: 70%;
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* ช่องใส่ชื่อข่าว */
+.input-title {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  border: 1px solid #ccc;
+}
+
+/* กลุ่มวันที่ */
+.date-group {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 10px;
+}
+
+/* ปฏิทินเลือกวันที่ */
+.date-picker {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* กลุ่มปุ่ม */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap; /* ให้ปุ่มขึ้นบรรทัดใหม่หากมีพื้นที่ไม่พอ */
+}
+
+/* Dropdown */
+.dropdown {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* ปุ่มสีน้ำเงิน */
+.blue-button {
+  background-color: #1976d2;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* ปุ่มในสถานะถูกเลือก */
+.blue-button.selected {
+  background-color: #0d47a1; /* สีที่เข้มขึ้น */
+  color: #fff; /* สีตัวหนังสือ */
+}
+
+/* Textarea */
+.textarea {
+  width: 90%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* กลุ่มรูปภาพ */
+.image-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* ปุ่มเลือกรูปภาพ */
+.image-button {
+  width: 80px;
+  height: 80px;
+  background-color: #f4f4f4;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* รูปภาพที่แสดง */
+.image-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ปุ่มลบรูปภาพ */
+.remove-image-button {
+  background-color: #d50000;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ช่องใส่ลิงก์ URL */
+.input-link {
+  width: 80%;
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px solid #ccc;
+}
+
+/* กลุ่มปุ่ม Action */
+.action-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* ปุ่ม Cancel */
+.cancel-button {
+  background-color: #d50000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ปุ่ม Post */
+.post-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
